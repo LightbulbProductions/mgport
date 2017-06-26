@@ -15,3 +15,7 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# No secrets sharing
+
+/config/secrets.yml
