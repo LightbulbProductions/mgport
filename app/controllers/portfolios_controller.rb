@@ -7,20 +7,24 @@ class PortfoliosController < ApplicationController
     @rails_portfolio_items = Portfolio.rails
   end
   
-  def new
-    @portfolio_item = Portfolio.new
+  def react
+    @react_portfolio_items = Portfolio.react
   end
   
-  def show
-    @portfolio_item = Portfolio.find(params[:id])
+  def new
+    @portfolio_item = Portfolio.new
   end
   
   def edit
     @portfolio_item = Portfolio.find(params[:id])
   end
   
+  def show
+    @portfolio_item = Portfolio.find(params[:id])
+  end
+  
   def create
-      @portfolio_item = Portfolio.new( params.require(:portfolio).permit(:title, :subtitle, :body))
+      @portfolio_item = Portfolio.new(portfolio_params)
       
       respond_to do |format|
         if @portfolio_item.save
@@ -32,6 +36,8 @@ class PortfoliosController < ApplicationController
     end
     
     def update
+      @portfolio_item = Portfolio.find(params[:id])
+      
         respond_to do |format|
           if @portfolio_item.update(portfolio_params)
             format.html { redirect_to portfolios_path, notice: 'Portfolio item was successfully updated.' }
@@ -49,5 +55,10 @@ class PortfoliosController < ApplicationController
           end
       end
     
+      private
+      def portfolio_params
+        params.require(:portfolio).permit(:title, :subtitle,
+                                          :body, technologies_attributes: [:name])
+      end
   
 end
