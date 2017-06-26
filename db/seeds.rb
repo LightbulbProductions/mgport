@@ -15,10 +15,24 @@ end
 
 puts "4 skills created"
 
-8.times do |portfolio_item|
+6.times do |portfolio_item|
   Portfolio.create!(
     title: "Portfolio title: #{portfolio_item}",
-    subtitle: "My portfolio subtitle",
+    subtitle: "Ruby on Rails",
+    body: "Ea mixtape tbh synth man braid, chambray intelligentsia tattooed lyft gastropub.Tumblr helvetica paleo 
+      neutra mumblecore. Organic live-edge snackwave lumbersexual viral polaroid, excepteur vinyl photo booth aute
+      pork belly literally fugiat 3 wolf moon. Woke tumeric brooklyn +1 nostrud, deserunt hexagon offal roof party
+      chartreuse scenester pork belly. Esse next level id chambray crucifix elit kombucha dolore cupidatat 8-bit 
+      pariatur before they sold out selvage leggings.",
+      main_image:"http://placehold.it/600x400",
+      thumb_image: "http://placehold.it/350x200"
+  )
+end
+
+2.times do |portfolio_item|
+  Portfolio.create!(
+    title: "Portfolio title: #{portfolio_item}",
+    subtitle: "React",
     body: "Ea mixtape tbh synth man braid, chambray intelligentsia tattooed lyft gastropub.Tumblr helvetica paleo 
       neutra mumblecore. Organic live-edge snackwave lumbersexual viral polaroid, excepteur vinyl photo booth aute
       pork belly literally fugiat 3 wolf moon. Woke tumeric brooklyn +1 nostrud, deserunt hexagon offal roof party
@@ -30,3 +44,12 @@ puts "4 skills created"
 end
 
 puts "8 portfolio items created"
+
+3.times do |technology|
+  Technology.create!(
+    name: "Technology #{technology}",
+    portfolio_id: Portfolio.last.id
+  )
+end
+
+puts "3 technologies created"
