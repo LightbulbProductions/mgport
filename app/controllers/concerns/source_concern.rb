@@ -1,11 +1,11 @@
-module SetSource
+module SourceConcern
   extend ActiveSupport::Concern
   
   included do 
-    before_action :set_source
+    before_action :source_concern
   end
   
-  def set_source
+  def source_concern
     session[:source] = params[:q] if params[:q]
   end
 end

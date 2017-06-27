@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-  include SetSource
+  include SourceConcern
   include CurrentUserConcern
+  include PageContentConcern
   
 end
