@@ -14,6 +14,8 @@ gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'popper_js', '~> 1.9.9'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -38,7 +40,10 @@ gem 'devise', '~> 4.3'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'pry-byebug'
 end
+
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
