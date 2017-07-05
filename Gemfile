@@ -20,6 +20,7 @@ gem 'popper_js', '~> 1.9.9'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
+gem 'jquery-ui-rails', '~> 6.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -37,6 +38,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'devise', '~> 4.3'
+gem 'site_view_tool', git: 'https://github.com/LightbulbProductions/site_view_tool'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri

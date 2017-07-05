@@ -1,1 +1,83 @@
+@import "nav";
+@import "font-awesome";
 @import "bootstrap";
+
+html,
+body {
+	width: 100%;
+  height: 100%;
+
+  .nav-toggle {
+    color: rgb(238,238,238);
+    margin-top: -6px;
+  }
+}
+body {
+  text-align: center;
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+canvas {
+  position: absolute;
+  width: 100%; height: 200px;
+  bottom: 0px; left: 0px;
+}
+
+
+//nav
+
+.app-nav {
+  margin-bottom: 35px;
+  margin-top: 0;
+  padding-top: 0.3rem;
+  padding-bottom: 0;
+  li {
+    font-size: 1.07em;
+    margin-left: 20px;
+  }
+}
+
+a.navbar-brand {
+  font-size: 2rem;
+  margin-top: -10px;
+  margin-left: 10%;
+}
+.nav-link {
+  //margin-left: 60%;
+  padding: 1rem;
+  font-weight: 500;
+  color: #fff;
+  transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #D4AF37;
+  background-color: transparent;
+  transform: scale(1.2) rotate(2deg);
+}
+
+.nav-link.active {
+  color: rgb(240, 190,115);
+  border-bottom: 1px solid rgb(240, 190,115);
+  &:hover {
+    transform: none;
+    color: gray;
+  }
+}
+.nav-toggle {
+  color: rgb(238,238,238);
+  margin-top: -6px;
+}
+
+@media (min-width: 40em) {
+  .app-nav {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 62em) {
+  .app-nav ul {
+    margin-left: 35%;
+  }
+}

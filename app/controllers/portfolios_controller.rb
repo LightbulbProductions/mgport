@@ -3,8 +3,15 @@ class PortfoliosController < ApplicationController
   layout "portfolio"
   
   def index
-    @portfolio_items = Portfolio.all
-    @page_title = "My Workings"
+    @portfolio_items = Portfolio.by_position
+  end
+  
+  def sort
+    params[:order].each do |key, value|
+      Portfolio.find(value[:id]).update(position: value[:position])
+    end
+
+    render nothing: true
   end
   
   def rails
@@ -57,7 +64,8 @@ class PortfoliosController < ApplicationController
       private
       def portfolio_params
         params.require(:portfolio).permit(:title, :subtitle,
-                                          :body, technologies_attributes: [:name])
+                                          :body, :main_image,
+                                          :thumb_image, technologies_attributes: [:name])
       end
       
       def set_portfolio_item
