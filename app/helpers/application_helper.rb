@@ -1,5 +1,5 @@
 module ApplicationHelper
-  def login_helper
+  def login_helper style = ''
 	   if current_user.is_a?(User) 
 	    link_to "Sign Out", destroy_user_session_path, method: :delete 
 	    #link_to "Sign In", new_user_session_path 

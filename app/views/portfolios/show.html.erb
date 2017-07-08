@@ -11,7 +11,7 @@
 
       <em><%= @portfolio_item.subtitle %></em>
 
-      <p><%= @portfolio_item.body %></p>
+      <p><%= markdown @portfolio_item.body %></p>
 
       <hr>
 
@@ -20,6 +20,7 @@
       <% @portfolio_item.technologies.each do |t| %>
       <p><%= t.name %></p>
       <% end %>
+	  
     </div>
   </div>
 </div>

@@ -12,15 +12,15 @@
   </head>
 
   <body>
-	  <p class="notice"><%= notice %></p>
-	  <p class="alert"><%= alert %></p>
-		  <%= render "shared/application_nav", location:'top' %>
-		 <%= login_helper %>
-		
-	      <%= yield %>
-	     
-		  <%= render "shared/footer", location: 'bottom' %>
-		  <%= source_helper %>
-	   
+	  <%= render "shared/application_nav", location:'top' %>
+	  <!--<div class="site-wrapper">
+	     <div class="site-wrapper-inner">-->
+	       <div class="container">
+	         <%= yield %>
+		 
+		     <%= render "shared/footer" %>
+		     <%= source_helper %>
+		 </div>
+	 
   </body>
 </html>

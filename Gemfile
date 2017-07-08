@@ -40,14 +40,16 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise', '~> 4.3'
 gem 'site_view_tool', git: 'https://github.com/LightbulbProductions/site_view_tool'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
+gem 'cocoon', '~> 1.2'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'pry-byebug'
 end
 
-
-
+#gem 'theater_js_rails', path: '/Users/test/Documents/projects/theater_js_rails'
+gem 'redcarpet', '~> 3.4'
+gem 'coderay', '~> 1.1'
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'

@@ -12,27 +12,28 @@
       </div>
     </div>
 
-    <div class="col-md-6">
-      <div class="form-group">
+  <div class="col-md-6">
+     <div class="form-group">
         <%= f.label :body %>
         <%= f.text_area :body, class: 'form-control', rows: 13 %>
-      </div>
+     </div>
     </div>
   </div>
 
   <hr>
-<div class="col-md-12">
-    <h2>Technologies Used:</h2>
 
-    <div>
-      <%=	f.fields_for :technologies do |t|%>
-        <%= render 'technology_fields', f: t %>
-      <% end %>
-      <div>
-		  
-        <%#= THIS NEEDS COCOON link_to_add_association 'Add Technology', f, :technologies %>
+  <div class="col-md-12">
+     <h2>Technolgies Used:</h2>
+     <div>
+       <%= f.fields_for :technologies do |technology_form| %>
+         <%= render 'technology_fields', f: technology_form %>
+       <% end %>
+
+       <div>
+         <%= link_to_add_association 'Add Technology', f, :technologies %>
+       </div>
       </div>
-</div>
+
     <div class="form-group">
       <%= f.submit 'Save Portfolio Item', class: 'btn btn-primary btn-block' %>
     </div>
