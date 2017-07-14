@@ -24,7 +24,7 @@ puts "4 skills created"
       pork belly literally fugiat 3 wolf moon. Woke tumeric brooklyn +1 nostrud, deserunt hexagon offal roof party
       chartreuse scenester pork belly. Esse next level id chambray crucifix elit kombucha dolore cupidatat 8-bit 
       pariatur before they sold out selvage leggings.",
-      main_image:"http://placehold.it/600x400",
+      main_image: "http://placehold.it/600x400",
       thumb_image: "http://placehold.it/350x200"
   )
 end
@@ -38,7 +38,7 @@ end
       pork belly literally fugiat 3 wolf moon. Woke tumeric brooklyn +1 nostrud, deserunt hexagon offal roof party
       chartreuse scenester pork belly. Esse next level id chambray crucifix elit kombucha dolore cupidatat 8-bit 
       pariatur before they sold out selvage leggings.",
-      main_image:"http://placehold.it/600x400",
+      main_image: "http://placehold.it/600x400",
       thumb_image: "http://placehold.it/350x200"
   )
 end

@@ -1,7 +1,9 @@
 <div class="col-md-4">
   <div class="card portfolio">
     <figure class="effect" data-id="<%= portfolio_item.id %>">
-      <%= image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil? %>
+			 <a href='<%= portfolio_show_path(portfolio_item) %>'>
+      <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb'), width: '100%' %>
+		</a>
       <figcaption>
         <p class="card-text">
          <span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span> 
