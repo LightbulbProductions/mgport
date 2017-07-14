@@ -82,6 +82,10 @@ body {
 	margin-right: -2rem;
 	margin-bottom: 2em;
 }
+.port-container {
+	margin: auto;
+	padding: 3rem;
+}
 .port-container a {
 	color: #778899;
 }
@@ -110,10 +114,10 @@ body {
 	border: .01rem solid #18171c;
 }
 
-//.album {
-  //padding-bottom: 2rem;
+.album {
+  padding-bottom: 2rem;
   //background-color: black;
-  //}
+}
 
 .container .card {
 	margin-top: 2em;
