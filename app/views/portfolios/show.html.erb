@@ -1,7 +1,10 @@
-<div class="container">
+<div class="port-container">
   <div class="row">
     <div class="col-md-7">
       <%= image_tag @portfolio_item.main_image %>
+			<br>
+			<%= link_to "modal of more Images", portfolios_path %> |
+			<%= link_to "github code if public", portfolios_path %>
     </div>
 
     <div class="col-md-5">
@@ -9,8 +12,9 @@
 
       <hr>
 
-      <em><%= @portfolio_item.subtitle %></em>
-
+      <em><%= @portfolio_item.subtitle %></em><br>
+      <em><%= link_to "web address", portfolios_path %></em>
+			
       <p><%= markdown @portfolio_item.body %></p>
 
       <hr>
@@ -20,7 +24,10 @@
       <% @portfolio_item.technologies.each do |t| %>
       <p><%= t.name %></p>
       <% end %>
-	  
+	  <br>
+	  <br>
+	   <%= link_to "View All Portfolio Items", portfolios_path %>
     </div>
   </div>
+ 
 </div>

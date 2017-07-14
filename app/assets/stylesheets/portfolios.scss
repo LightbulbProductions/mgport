@@ -4,45 +4,124 @@
 @import "font-awesome";
 @import "bootstrap";
 @import "jquery-ui";
+
+html,
 body {
-  min-height: 75rem; /* Can be removed; just added for demo purposes */
+  width: 100%;
+  height: 100%;
+  font-family: Snowfall, verdana, arial, helvetica, sans-serif;
 }
+
+
+body {
+	margin-bottom: 3rem;
+	background: linear-gradient(270deg, #151515, #212121);
+    background-size: 400% 400%;
+	-webkit-animation: portyPoo 8s ease infinite;
+    -moz-animation: portyPoo 8s ease infinite;
+    animation: portyPoo 8s ease infinite;
+
+@-webkit-keyframes portyPoo {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes portyPoo {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes portyPoo {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+}
+
+//nav
 
 .navbar {
+	padding-top: 10px;
+	margin: 1rem;
+}
+.navbar-brand {
+  color: rgb(212, 175, 55);
+  font-size: 2rem;
+}
+.navbar-brand:hover {
+	color: #812fa8;
+	
+};
+.nav-link {
+  margin-left: 3em;
+  padding-left: 30%;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(212, 175, 55);
+}
+
+.nav-link.active {
+  color: rgb(212, 175, 55);
+  border-bottom: 1px solid rgb(212, 175, 55);
+}
+.nav-link:hover,
+.nav-link:focus {
+	color: rgb(212, 175, 55);
+	background-color: #232323;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff,
+		 		0 0 15px #fff, 0 0 20px #e3f210, 
+				0 0 30px #e3f210, 0 0 40px #e3f210, 
+				0 0 55px #e3f210, 0 0 75px #e3f210;
+}
+.nav-toggle {
+  color: rgb(238,238,238);
+  margin-top: -6px;
+}
+
+.row {
+	margin-right: -2rem;
+	margin-bottom: 2em;
+}
+.port-container a {
+	color: #778899;
+}
+.jumbotron {
+  background: image-url('batzback2.png') no-repeat;
+  background-size: cover;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
   margin-bottom: 0;
 }
 
-.jumbotron {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  margin-bottom: 0;
-  background-color: #fff;
-}
 
 .jumbotron p:last-child {
   margin-bottom: 0;
 }
 
-.jumbotron-heading {
-  font-weight: 300;
-}
 
 .jumbotron .container {
   max-width: 40rem;
+  //color: #F5F5F5;
 }
 
-.album {
-  min-height: 50rem; /* Can be removed; just added for demo purposes */
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: #f7f7f7;
+.btn,
+.btn:hover {
+	background: rgba(122, 115, 142, .6);
+	border: .01rem solid #18171c;
 }
 
-.card {
-  float: left;
-  width: 33.333%;
-  padding: .75rem;
-  margin-bottom: 2rem;
+//.album {
+  //padding-bottom: 2rem;
+  //background-color: black;
+  //}
+
+.container .card {
+	margin-top: 2em;
+  //  margin-bottom: 2em;
+}
+.card .portfolio {
+  //float: left;
+  width: auto;
   border: 0;
 }
 
@@ -50,62 +129,147 @@ body {
   margin-bottom: .75rem;
 }
 
-.card-text {
+.card-text a {
   font-size: 85%;
+  color: #F5F5DC;
 }
 
-figure.effect figcaption::before {
+	
+.card figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 0%;
+	max-height: 100%;
+	width: 100%;
+	background: #08070b;
+	text-align: center;
+	cursor: pointer;
+}
+
+.card figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.card figure figcaption {
+	padding: 1em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.75em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.card figure figcaption::before,
+.card figure figcaption::after {
+	pointer-events: none;
+}
+
+.card figure figcaption,
+.card figure figcaption > a {
 	position: absolute;
 	top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
-		content: '';
-		opacity: 0;
-		transform: translate3d(0,50%,0);
-	}
-	figure.effect h2 {
-		position: absolute;
-		top: 50%;
-		left: 0;
-		width: 100%;
-		color: #484c61;
-		transition: transform 0.35s, color 0.35s;
-		transform: translate3d(0,-50%,0);
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+.card figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.card figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.card figure h2 span {
+	font-weight: 800;
+}
+
+.card figure h2,
+.card figure p {
+	margin: 0;
+}
+
+.card figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+figure.effect img {
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+}
+
+figure.effect:hover img {
+	opacity: 0.3;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect h2 {
+	margin-top: 20%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+figure.effect p {
+	//margin: 1em 0 0;
+	padding: 1em;
+	border: 1px solid #fff;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0) scale(1.1);
+	transform: translate3d(0,20px,0) scale(1.1);
+} 
+
+figure.effect:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0) scale(1);
+	transform: translate3d(0,0,0) scale(1);
+}
+	@media (min-width: 48em) {
+	  .figure {
+	    margin: auto 50px 30px;
+	    padding: 15px 0;
+	    img {
+	      width: 45vw;
+	    }
+	  }
 	}
 
-	figure.effect figcaption::before,
-	figure.effect p {
-		transition: opacity 0.35s, transform 0.35s;
-	}
 
-	figure.effect p {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		padding: 2em;
-		width: 100%;
-		opacity: 0;
-		transform: translate3d(0,10px,0);
-	}
+.footer  {
+	color: #D4AF37;
+	right: 0;
+	left: 0;
+	text-align: center;
+	margin-bottom: 2rem;
+}
 
-	figure.effect:hover h2 {
-		color: #fff;
-		transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
-	}
-
-	figure.effect:hover figcaption::before ,
-	figure.effect:hover p {
-		opacity: 1;
-		transform: translate3d(0,0,0);
-	}
-	
-//footer {
-  //padding-top: 3rem;
-  //padding-bottom: 3rem;
-  //}
-
-//footer p {
-  //margin-bottom: .25rem;
-  //}
+@media (min-width: 40em) {
+  .footer {
+    position: fixed;
+    bottom: 0;
+  }
+}

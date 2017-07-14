@@ -1,0 +1,146 @@
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+}*/
+
+.container {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	//padding-bottom: 2rem;
+	background-position: center center;
+	background: image-url('amagansettnight.jpeg') no-repeat;
+	background-size: 100% 100%;
+	height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+ .about-container {
+	height: 80%;
+
+	
+	}
+
+   .about-container p {
+        padding: 10px 10px;
+        text-transform: uppercase;
+        font-size: 18px;
+        letter-spacing: .5px;
+    }
+
+
+   .about-container h1 {
+       text-align: left;
+        padding: 10px; 
+	    	margin-right: 14em;
+        font-size: 120%;
+    }
+	.container1 {
+	        background-color: #F5F5DC;
+	        //max-width: 800px;
+	        padding: 5px 10px 10px 5px;
+	        float: left;
+	        margin-right: .75rem;
+	        margin-left: .75rem;
+	        margin-top: 2rem;
+	        border: 3px solid rgb(250,250,250);
+	        border: 3px solid rgba(250,250,250,.9);
+	        -webkit-box-shadow: 15px 10px 5px rgba(12, 24, 12, 0.9);
+	        -moz-box-shadow: 15px 10px 5px rgba(12, 24, 12, 0.9);
+	        box-shadow: 15px 10px 5px rgba(12, 24, 12, 0.9);
+	        opacity: .9;
+	    }
+
+
+    .container1:hover {
+        background-color: rgba(255,250,225,.9); 
+        -webkit-transform: rotate(.5deg);
+        -moz-transform: rotate(-.5deg);
+        -ms-transform: rotate(-.5deg);
+        -o-transform: rotate(-.5deg);
+        transform: rotate(.25deg);
+    }
+    .container2 {
+        margin-top: 1rem;
+        margin-right: 20px;
+        margin-left: 20px;
+		margin-bottom: 1rem;
+        float: right;
+        background-color: #F5F5DC;
+        border: 3px solid rgb(250,250,250);
+        border: 3px solid rgba(250,250,250,.9);
+        -webkit-box-shadow: 15px 10px 5px rgba(12, 24, 12, 0.9);
+        -moz-box-shadow: 15px 10px 5px rgba(12, 24, 12, 0.9);
+        box-shadow: 15px 10px 5px rgba(12, 24, 12, 0.9);
+        opacity: .9;
+       
+    }
+    .container2:hover {
+           opacity: 0.9;
+           -webkit-transform: rotate(-1deg);
+           -moz-transform: rotate(1deg);
+           -ms-transform: rotate(1deg);
+           -o-transform: rotate(1deg);
+           transform: rotate(-1deg);
+       }
+    .container3 {
+        margin-top: 2rem;
+        margin-right: 20px;
+        margin-left: 100px;
+        margin-bottom: 1rem;
+        float: left;
+        background-color: #F5F5DC;
+        border: 3px solid rgb(250,250,250);
+        border: 3px solid rgba(250,250,250,.9);
+        -webkit-box-shadow: 15px 10px 5px rgba(12, 24, 12, 0.9);
+        -moz-box-shadow: 15px 10px 5px rgba(12, 24, 12, 0.9);
+        box-shadow: 15px 10px 5px rgba(12, 24, 12, 0.9);
+        opacity: .9;
+    }
+
+    .container3:hover {
+        opacity: 0.9;
+        box-shadow: 1px 1px 25px rgb(139,32,186);
+        box-shadow: 1px 1px 25px rgb(139,32,186);
+        -webkit-box-shadow: 1px 1px 25px rgba(139,32,186,.9);
+        -moz-box-shadow: 1px 1px 25px rgba(139,32,186,.9); 
+        -webkit-transform: rotate(.5deg);
+        -moz-transform: rotate(.5deg);
+        -ms-transform: rotate(.5deg);
+        -o-transform: rotate(.5deg);
+        transform: rotate(.5deg);
+    }
+
+    img.me1 {
+		max-height: 200px;
+        max-width: 230px;
+        margin: 0 auto;
+        float: left;
+        padding: 10px 10px;
+    }
+
+
+    img.me2 {
+       max-width: 230px;
+        float: right;
+      padding: 10px 20px;
+        margin:0 auto;
+    }
+img.me4 {
+ max-width: 200px;
+        margin: 0 auto;
+        float: left;
+        padding: 20px 20px;
+}
+    img.me3 {
+      max-width: 220px;
+        float:left;
+        padding: 10px 20px;
+        border-radius: 70%;
+       
+    }
+	

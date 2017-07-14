@@ -1,7 +1,17 @@
+<section class="jumbotron text-left">
+  <div class="heading">
+		<h1 class="jumbotron-heading">Workings</h1>
+		<p class="lead text-muted">WILLL BE UPDATED SHORTLY</p>
+		<p>
+			<%= link_to 'Contact Me!', contact_path, class: 'btn btn-primary' %>
+		</p>
+	</div>
+</section>
+
 <div class="album text-muted">
-  <div class="container">
-    <div class="row sortable">
-      <%= render partial: 'portfolio_item', collection: @portfolio_items %>
-    </div>
-  </div>
+	<div class="container"> 
+		<div class="row sortable">
+			<%= render partial: 'portfolio_item', collection: @portfolio_items %>
+		</div>
+	</div>
 </div>

@@ -1,16 +1,11 @@
-<div class="sidebar-module">
-    <ol class="list-unstyled social-links">
-		<%= link_to root_path do %>
-		    <%= fa_icon "home 2x" %>
-		<% end %>
-		<%= link_to about_path do %>
-		    <%= fa_icon "user 2x" %>
-		<% end %>
-		<%= link_to portfolios_path do %>
-		    <%= fa_icon "briefcase 2x" %>
-		<% end %>
-		<%= link_to contact_path do %>
-		    <%= fa_icon "address-card 2x" %>
-		<% end %>
-    </ol>
-</div>
+<nav class="navbar navbar-toggleable-md navbar-dark">
+    <div class='collapse navbar-collapse' id='navbarSupportedContent'>
+      <ul class='navbar-nav mr-auto nav-links'>
+        <%= nav_helper 'nav-link', 'li' %>
+      </ul>
+    </div>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><%= fa_icon "bars 2x", class: 'nav-toggle' %>
+  </button>
+ <%= link_to 'MichelleGerber', root_path, class: 'navbar-brand' %>
+  
+</nav>
