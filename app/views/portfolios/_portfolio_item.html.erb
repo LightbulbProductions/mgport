@@ -2,8 +2,8 @@
   <div class="card portfolio">
     <figure class="effect" data-id="<%= portfolio_item.id %>">
 			 <a href='<%= portfolio_show_path(portfolio_item) %>'>
-      <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb'), width: '100%' %>
-		</a>
+       <%= image_tag portfolio_img(portfolio_item.thumb_image, 'thumb'), width: '100%' %>
+		   </a>
       <figcaption>
         <p class="card-text">
          <span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span> 

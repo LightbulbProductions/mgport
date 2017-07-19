@@ -10,7 +10,6 @@ body {
 }
 
 body {
-  //background: image-url('guilloche2.jpg') no-repeat;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
   background: linear-gradient(88deg, #0e0910, #01010d, #2B1A44);
@@ -65,14 +64,13 @@ p, ol, ul, td {
 }
 
 .cover-container {
-	
   margin-right: auto;
   margin-left: auto;
 }
 .inner-cover {
 	color: rgb(224, 197, 112);
 	padding: 10rem;
-	margin-top: 3rem;
+	margin-top: 2rem;
 }
 /* Padding for spacing */
 .inner {
