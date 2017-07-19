@@ -11,6 +11,7 @@
 <div class="album text-muted">
 	<div class="container"> 
 		<div class="row sortable">
+			 <%= link_to "new", new_portfolio_path, class: 'btn btn-primary' %>
 			<%= render partial: 'portfolio_item', collection: @portfolio_items %>
 		</div>
 	</div>
