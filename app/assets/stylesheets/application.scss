@@ -10,7 +10,7 @@ body {
 }
 
 body {
-  text-align: center;
+  text-align: left;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
   background: linear-gradient(88deg, #0e0910, #01010d, #2B1A44);
   background-size: 600% 600%;
@@ -241,10 +241,10 @@ height: 100%;
   margin-top: -6px;
 }
 .mastfoot {
-   position: absolute;
-   right: 0;
-   left: 0;
-   bottom: 0;
+  // position: absolute;
+   //right: 0;
+   //left: 0;
+   //bottom: 0;
    //left: 15vw;
    font-weight: 300;
    color: rgba(127,107,0,.5);
@@ -252,10 +252,34 @@ height: 100%;
 .app-footer {
 	color: #b29600;
 }
+@media (min-width: 62em) {
+.masthead, .mastfoot, .cover-container {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+}
 
+.inner {
+    /* padding: 1rem; */
+}
 
+.app-footer {
+    color: #b29600;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+.container {
+    width: 100%;
+    display: block;
+    position: relative;
+    height: 1156px;
+}
+}
+/*
 @media (min-width: 40em) {
-  /* Pull out the header and footer */
+  
   .masthead {
    // position: fixed;
    // top: 0;
@@ -264,15 +288,15 @@ height: 100%;
     position: fixed;
     bottom: 0;
   }
-  /* Start the vertical centering */
+  
   .site-wrapper-inner {
     vertical-align: middle;
   }
-  /* Handle the widths */
+ 
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+   
   }
 }
 
@@ -283,4 +307,4 @@ height: 100%;
     width: 65rem;
   }
 }
-
+*/
