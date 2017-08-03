@@ -52,7 +52,7 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #162260;
+  color: #E0E0E0;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color:#020721;
   border: .01rem solid #ccc45d;
@@ -81,11 +81,6 @@ p, ol, ul, td {
 	padding-top: 1em;
 }
 
-.mastfoot {
-  color: rgba(255,255,255,.5);
-  margin-right: auto;
-  margin-left: auto;
-}
 
 .card-block {
  // color: black;
@@ -196,8 +191,49 @@ height: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-//nav
+.app-footer {
+    color: #b29600;
+    text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+}
 
+
+
+@media (min-width: 800px) {
+.container {
+    width: 100%;
+    display: block;
+    position: relative;
+    height: 1156px;
+}
+}
+
+@media (min-width: 340px) {
+	.container {
+    width: 100%;
+    display: block;
+    position: relative;
+    height: 1156px;
+	}
+}
+
+@media (min-width: 40em) {
+  .mastfoot {
+   // position: fixed;
+    bottom: 0;
+		margin-left: auto;
+		margin-right: auto;
+		
+  }
+}
+@media (min-width: 62em) {
+  .masthead,
+  .mastfoot,
+ .container {
+    width: 65rem;
+  }
+}
 .navbar {
   padding: 2rem;
 }
@@ -240,71 +276,4 @@ height: 100%;
   color: rgb(238,238,238);
   margin-top: -6px;
 }
-.mastfoot {
-  // position: absolute;
-   //right: 0;
-   //left: 0;
-   //bottom: 0;
-   //left: 15vw;
-   font-weight: 300;
-   color: rgba(127,107,0,.5);
-}
-.app-footer {
-	color: #b29600;
-}
-@media (min-width: 62em) {
-.masthead, .mastfoot, .cover-container {
-    width: 100%;
-    display: block;
-    position: relative;
-}
-}
 
-.inner {
-    /* padding: 1rem; */
-}
-
-.app-footer {
-    color: #b29600;
-    text-align: center;
-}
-
-@media (min-width: 992px) {
-.container {
-    width: 100%;
-    display: block;
-    position: relative;
-    height: 1156px;
-}
-}
-/*
-@media (min-width: 40em) {
-  
-  .masthead {
-   // position: fixed;
-   // top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-  
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
- 
-  .masthead,
-  .mastfoot,
-  .cover-container {
-   
-  }
-}
-
-@media (min-width: 62em) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 65rem;
-  }
-}
-*/

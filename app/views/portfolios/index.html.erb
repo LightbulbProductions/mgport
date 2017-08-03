@@ -3,16 +3,16 @@
 		<h1 class="jumbotron-heading">Workings</h1>
 		<p class="lead text-muted">WILLL BE UPDATED SHORTLY</p>
 		<p>
-			<%= link_to 'Contact Me!', contact_path, class: 'btn btn-primary' %>
+			<%= link_to 'Contact Me!', contact_path, class: 'btn btn-secondary' %>
 		</p>
 	</div>
 </section>
 
 <div class="album text-muted">
-	<div class="container"> 
+	<!--div class="container"> -->
 		<div class="row sortable">
 			 <%#= link_to "new", new_portfolio_path, class: 'btn btn-primary' %>
 			<%= render partial: 'portfolio_item', collection: @portfolio_items %>
 		</div>
-	</div>
+		<!--/div>-->
 </div>

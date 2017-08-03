@@ -4,6 +4,7 @@
 @import "font-awesome";
 @import "bootstrap";
 @import "jquery-ui";
+@import "nav";
 
 html,
 body {
@@ -38,57 +39,14 @@ body {
 }
 }
 
-//nav
 
-.navbar {
-	padding-top: 10px;
-	margin: 1rem;
-}
-.navbar-brand {
-  color: rgb(212, 175, 55);
-  font-size: 2rem;
-}
-.navbar-brand:hover {
-	color: #812fa8;
-	
-};
-.nav-link {
-  margin-left: 3em;
-  padding-left: 30%;
-  font-size: 1rem;
-  font-weight: 500;
-  color: rgb(212, 175, 55);
-}
-
-.nav-link.active {
-  color: rgb(212, 175, 55);
-  border-bottom: 1px solid rgb(212, 175, 55);
-}
-.nav-link:hover,
-.nav-link:focus {
-	color: rgb(212, 175, 55);
-	background-color: #232323;
-	text-shadow: 0 0 5px #fff, 0 0 10px #fff,
-		 		0 0 15px #fff, 0 0 20px #e3f210, 
-				0 0 30px #e3f210, 0 0 40px #e3f210, 
-				0 0 55px #e3f210, 0 0 75px #e3f210;
-}
-.nav-toggle {
-  color: rgb(238,238,238);
-  margin-top: -6px;
-}
 
 .row {
-	margin-right: -2rem;
-	margin-bottom: 2em;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	margin: 2px, 20px, 32px, 20px;
 }
-.port-container {
-	margin: auto;
-	padding: 3rem;
-}
-.port-container a {
-	color: #778899;
-}
+
 .jumbotron {
   background: image-url('batzback2.png') no-repeat;
   background-size: cover;
@@ -116,22 +74,29 @@ body {
 
 .album {
   padding-bottom: 2rem;
+	padding-left: .5rem;
+	padding-right: .5rem;
   //background-color: black;
 }
 
-.container .card {
-	margin-top: 2em;
+.album .card {
+	margin-top: 1.5em;
+	margin-left: .5rem;
+	margin-right: .5rem;
   //  margin-bottom: 2em;
 }
 .card .portfolio {
   //float: left;
   width: auto;
   border: 0;
+	margin-bottom: 50px;
+	border-top: 30px;
+	background-color: black;
 }
 
-.card > img {
-  margin-bottom: .75rem;
-}
+//.card > img {
+  //margin-bottom: .75rem;
+	//}
 
 .card-text a {
   font-size: 85%;
@@ -188,7 +153,7 @@ body {
 	text-indent: 200%;
 	white-space: nowrap;
 	font-size: 0;
-	opacity: 0;
+	opacity: .4;
 }
 
 .card figure h2 {
@@ -210,7 +175,7 @@ body {
 	font-size: 68.5%;
 }
 figure.effect img {
-	opacity: 0.7;
+	opacity: 0.8;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: scale(1.15);
@@ -218,13 +183,13 @@ figure.effect img {
 }
 
 figure.effect:hover img {
-	opacity: 0.3;
+	opacity: 0.4;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
 
 figure.effect h2 {
-	margin-top: 20%;
+	margin-top: 30%;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,20px,0);
@@ -273,7 +238,6 @@ figure.effect:hover p {
 
 @media (min-width: 40em) {
   .footer {
-    //position: fixed;
     bottom: 0;
   }
 }
