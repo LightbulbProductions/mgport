@@ -1,0 +1,102 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+}
+.portrait {
+  width: 160px;
+  height: 177px;
+  float: left;
+}
+
+.inner {
+	/*padding: 1rem;*/
+}
+.container {
+	 //margin: 0;
+	 height: auto;
+	 width: auto;
+}
+.container1 {
+  background-color: #F5F5DC;
+  padding: 2rem;
+  border: 3px solid rgba(250,250,250,0.9);
+  -webkit-box-shadow: 15px 10px 5px rgba(12,24,12,0.9);
+  box-shadow: 15px 10px 5px rgba(12,24,12,0.9);
+  opacity: .9;
+  width: 90%;
+  height: auto;
+  position: relative;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-container.bg{
+	background: image-url('blownsky.jpg') no-repeat;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+	
+
+.about-container p {
+	padding: 10px 10px;
+	font-size: 14px;
+	letter-spacing: .5px;
+	text-align: left;
+	color: #55428e;
+	line-height: 2.5em;
+	width: 92%;
+}
+.about-container h1 {
+	text-align: left;
+	padding: 0 0 1rem 0;
+	font-size: 2em;
+	color: #b29600;
+	font-family: sans-serif;
+	display: block;
+}
+
+.container1:hover {
+	background-color: rgba(255,250,225,.9); 
+	-webkit-transform: rotate(.5deg);
+	-moz-transform: rotate(-.5deg);
+	-ms-transform: rotate(-.5deg);
+	-o-transform: rotate(-.5deg);
+	transform: rotate(.25deg);
+}
+   
+
+img.me1 {
+	max-height: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+	float: left;
+	padding: 0px 30px 0px 0px;
+}
+
+
+img.me2 {
+	max-width: 230px;
+	float: right;
+	padding: 10px 20px;
+	margin:0 auto;
+}
+img.me4 {
+	max-width: 200px;
+	margin: 0 auto;
+	float: left;
+	padding: 20px 20px;
+}
+img.me3 {
+	max-width: 220px;
+	float: left;
+	padding: 10px 20px;
+	border-radius: 70%;
+       
+}
+	

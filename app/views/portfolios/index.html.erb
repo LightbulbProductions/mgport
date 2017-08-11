@@ -1,13 +1,14 @@
-<section class="jumbotron text-left">
+<section class="header text-center">
   <div class="heading">
-		<h1 class="jumbotron-heading">Workings</h1>
-		<p class="lead text-muted">WILLL BE UPDATED SHORTLY</p>
+		<h1 class="display-1">Created Worlds</h1>
+		<p class="lead">Recent Examples of Work</p>
+		<p class="lead text-muted">Updates are pending.</p>
 		<p>
 			<%= link_to 'Contact Me!', contact_path, class: 'btn btn-secondary' %>
 		</p>
 	</div>
 </section>
-
+<div class="album-container">
 <div class="album text-muted">
 	<!--div class="container"> -->
 		<div class="row sortable">
@@ -15,4 +16,5 @@
 			<%= render partial: 'portfolio_item', collection: @portfolio_items %>
 		</div>
 		<!--/div>-->
+</div>
 </div>
