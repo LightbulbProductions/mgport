@@ -6,20 +6,16 @@
     <title><%= @page_title %></title>
 	<meta name="keywords" content= <%= @seo_keywords %> />
    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    
+     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 		 <%= csrf_meta_tags %>
   </head>
-
   <body>
 	  <%= render "shared/application_nav", location:'top' %>
-	 
 	      <!-- <div class="container"> -->
 	         <%= yield %>
 		 
 		     <%= render "shared/footer" %>
 		     <%= source_helper %>
-		 
-	 
   </body>
 </html>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+ 

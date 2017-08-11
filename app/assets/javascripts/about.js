@@ -11,5 +11,5 @@ var b2 = window.baffle('h3',
   speed: 50
 });
 b2.start().once().reveal(4000, 2000);
-	</script>
+	
   
