@@ -16,8 +16,6 @@
 //= require cocoon
 //= require popper
 //= require bootstrap-sprockets
-//= require lib/baffle
-//= require baffle
 //= require html.sortable
 //= require home
 //= require turbolinks
