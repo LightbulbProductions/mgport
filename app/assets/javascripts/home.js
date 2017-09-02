@@ -1,5 +1,4 @@
-$(document).on('turbolinks:load', function() {
-   var b = window.baffle('.display-2', 
+var b = window.baffle('.display-2', 
     {
       characters: 'b6c7807bb10b5d867000afaiufiuehefUry238y3U',
     speed: 50
@@ -11,4 +10,3 @@ $(document).on('turbolinks:load', function() {
   speed: 50
  });
  b2.start().once().reveal(4000, 2000);
-});
