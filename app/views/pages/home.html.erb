@@ -1,6 +1,6 @@
 <div class="inner-cover">
    <h1 class="display-2">And Here We Go!</h1>
-   <h2 class="display-3">Michelle Gerber, Full Stack Web Developer</h3>
+   <h2 class="display-3">Michelle Gerber, Full Stack Web Developer</h2>
    <p class="lead">
 		 <br>
      <%= link_to "About Me", about_path, class: "btn btn-lg btn-secondary" %>
@@ -24,7 +24,6 @@
 	        return e.m = t, e.c = n, e.p = "", e(0)
 	    }([function(t, e, n) {
 	        "use strict";
-
 	        function r(t) {
 	            return t && t.__esModule ? t : {
 	                "default": t
@@ -35,24 +34,19 @@
 	        t.exports = o["default"]
 	    }, function(t, e) {
 	        "use strict";
-
 	        function n(t, e) {
 	            for (var n in e) e.hasOwnProperty(n) && (t[n] = e[n]);
 	            return t
 	        }
-
 	        function r(t, e) {
 	            return t.split("").map(e).join("")
 	        }
-
 	        function i(t) {
 	            return t[Math.floor(Math.random() * t.length)]
 	        }
-
 	        function o(t, e) {
 	            for (var n = 0, r = t.length; n < r; n++) e(t[n], n)
 	        }
-
 	        function u(t) {
 	            return t.map(function(t, e) {
 	                return !!t && e
@@ -60,7 +54,6 @@
 	                return t !== !1
 	            })
 	        }
-
 	        function s(t) {
 	            return "string" == typeof t ? [].slice.call(document.querySelectorAll(t)) : [NodeList, HTMLCollection].some(function(e) {
 	                return t instanceof e
@@ -71,13 +64,11 @@
 	        }), e.extend = n, e.mapString = r, e.sample = i, e.each = o, e.getTruthyIndices = u, e.getElements = s
 	    }, function(t, e, n) {
 	        "use strict";
-
 	        function r(t) {
 	            return t && t.__esModule ? t : {
 	                "default": t
 	            }
 	        }
-
 	        function i(t, e) {
 	            if (!(t instanceof e)) throw new TypeError("Cannot call a class as a function")
 	        }
@@ -144,12 +135,10 @@
 	        }
 	    }, function(t, e, n) {
 	        "use strict";
-
 	        function r(t, e) {
 	            if (!t) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
 	            return !e || "object" != typeof e && "function" != typeof e ? t : e
 	        }
-
 	        function i(t, e) {
 	            if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function, not " + typeof e);
 	            t.prototype = Object.create(e && e.prototype, {
@@ -161,7 +150,6 @@
 	                }
 	            }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
 	        }
-
 	        function o(t, e) {
 	            if (!(t instanceof e)) throw new TypeError("Cannot call a class as a function")
 	        }
